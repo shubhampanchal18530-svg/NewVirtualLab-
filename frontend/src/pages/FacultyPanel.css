@@ -1,0 +1,66 @@
+/* FacultyPanel.css */
+.faculty-panel {
+  background: #18181b;
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+.panel-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #38bdf8;
+}
+.submissions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #23232a;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+.submissions-table th, .submissions-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #374151;
+  text-align: left;
+}
+.submissions-table th {
+  background: #23232a;
+  color: #38bdf8;
+  font-weight: 600;
+}
+.submissions-table tr:last-child td {
+  border-bottom: none;
+}
+.remark-input {
+  background: #18181b;
+  color: #e5e7eb;
+  border: 1px solid #38bdf8;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+}
+.remark-save-btn {
+  background: #38bdf8;
+  color: #18181b;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.remark-save-btn:hover {
+  background: #0ea5e9;
+}
+@media (max-width: 900px) {
+  .submissions-table th, .submissions-table td {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .panel-title {
+    font-size: 1.5rem;
+  }
+}

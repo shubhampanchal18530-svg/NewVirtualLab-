@@ -1,0 +1,40 @@
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="white"/>
+  <g fill="black">
+    <!-- Top-left finder pattern -->
+    <rect x="0" y="0" width="7" height="7"/>
+    <rect x="1" y="1" width="5" height="5" fill="white"/>
+    <rect x="2" y="2" width="3" height="3" fill="black"/>
+    <rect x="7" y="0" width="1" height="8"/>
+    <rect x="0" y="7" width="7" height="1"/>
+    
+    <!-- Top-right finder pattern -->
+    <rect x="93" y="0" width="7" height="7"/>
+    <rect x="94" y="1" width="5" height="5" fill="white"/>
+    <rect x="95" y="2" width="3" height="3" fill="black"/>
+    <rect x="92" y="0" width="1" height="8"/>
+    <rect x="93" y="7" width="7" height="1"/>
+    
+    <!-- Bottom-left finder pattern -->
+    <rect x="0" y="93" width="7" height="7"/>
+    <rect x="1" y="94" width="5" height="5" fill="white"/>
+    <rect x="2" y="95" width="3" height="3" fill="black"/>
+    <rect x="7" y="93" width="1" height="8"/>
+    <rect x="0" y="92" width="8" height="1"/>
+    
+    <!-- Sample QR data pattern -->
+    <rect x="15" y="15" width="2" height="2"/>
+    <rect x="20" y="15" width="2" height="2"/>
+    <rect x="25" y="15" width="2" height="2"/>
+    <rect x="30" y="15" width="2" height="2"/>
+    <rect x="15" y="20" width="2" height="2"/>
+    <rect x="22" y="20" width="2" height="2"/>
+    <rect x="28" y="20" width="2" height="2"/>
+    <rect x="15" y="25" width="2" height="2"/>
+    <rect x="20" y="25" width="2" height="2"/>
+    <rect x="25" y="25" width="2" height="2"/>
+    <rect x="30" y="25" width="2" height="2"/>
+    <rect x="35" y="25" width="2" height="2"/>
+  </g>
+  <text x="50" y="95" font-size="4" text-anchor="middle" fill="black">Google Pay QR</text>
+</svg>

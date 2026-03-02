@@ -1,0 +1,76 @@
+/* StudentDashboard.css */
+.student-dashboard {
+  background: #18181b;
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #38bdf8;
+}
+.labs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.lab-card {
+  background: #23232a;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  padding: 2rem;
+  min-width: 280px;
+  max-width: 350px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.lab-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f472b6;
+  margin-bottom: 0.5rem;
+}
+.progress-section {
+  margin-bottom: 0.5rem;
+}
+.progress-bar-bg {
+  background: #374151;
+  border-radius: 0.5rem;
+  height: 18px;
+  width: 100%;
+  margin-top: 0.3rem;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  background: linear-gradient(90deg, #38bdf8 60%, #f472b6 100%);
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: width 0.5s;
+}
+.quiz-section ul,
+.weak-topics-section ul {
+  margin: 0.3rem 0 0 1rem;
+  padding: 0;
+  list-style: disc;
+}
+.quiz-section span,
+.weak-topics-section span {
+  font-weight: 500;
+  color: #38bdf8;
+}
+@media (max-width: 900px) {
+  .labs-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lab-card {
+    max-width: 95vw;
+  }
+}

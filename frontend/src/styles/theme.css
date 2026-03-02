@@ -1,0 +1,48 @@
+/* SimuLab Global Theme Variables (Institutional Dark Theme)
+   Enforced for all UI components and pages */
+:root {
+  /* Brand Colors */
+  --color-primary: #38bdf8; /* SimuLab Blue */
+  --color-accent: #818cf8;  /* Academic Violet */
+
+  /* Background Layers */
+  --bg-main: #0b0f1a;
+  --bg-panel: #121826;
+  --bg-panel-soft: #161d2e;
+  --bg-elevated: #1a2236;
+
+  /* Text Colors */
+  --text-main: #ffffff; /* default main text now white */
+  --text-muted: #9ca3af;
+  --text-highlight: #ffffff;
+  --text-accent: var(--color-primary);
+
+  /* Border & Shadow */
+  --border: #1f2937;
+  --shadow-elevated: 0 8px 32px rgba(56,189,248,0.10), 0 1.5px 8px rgba(0,0,0,0.18);
+  --shadow-card: 0 4px 18px rgba(56,189,248,0.08), 0 1.5px 8px rgba(0,0,0,0.13);
+
+  /* Radius */
+  --radius-lg: 18px;
+  --radius-md: 14px;
+  --radius-sm: 8px;
+
+  /* Spacing */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-56: 56px;
+
+  /* Typography */
+  --font-main: 'Inter', system-ui, sans-serif;
+  --font-size-h1: 2.6rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.18rem;
+  --font-size-body: 1rem;
+  --font-size-helper: 0.93rem;
+}

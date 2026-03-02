@@ -1,0 +1,46 @@
+/* AIAnalytics.css */
+.ai-analytics-page {
+  background: #18181b;
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+.analytics-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #38bdf8;
+}
+.analytics-section {
+  background: #23232a;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.analytics-section h2 {
+  color: #f472b6;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.analytics-section ul {
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+  list-style: disc;
+}
+.analytics-note {
+  text-align: center;
+  color: #a1a1aa;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+@media (max-width: 900px) {
+  .analytics-title {
+    font-size: 1.5rem;
+  }
+  .analytics-section {
+    padding: 1rem;
+  }
+}

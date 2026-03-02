@@ -1,0 +1,330 @@
+.hero-maxwidth {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-24);
+  width: 100%;
+}
+
+.features-maxwidth {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-24);
+  width: 100%;
+}
+
+.labs-maxwidth {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-24);
+  width: 100%;
+}
+
+.features-title, .labs-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.feature-heading {
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.3rem 0;
+  color: var(--text-main);
+}
+
+.feature-desc {
+  color: #d1d5db;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.lab-title {
+  font-size: 1.13rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  color: var(--text-main);
+}
+
+.labs-title {
+  margin-bottom: 2rem;
+}
+
+/* Features grid: 3 columns on desktop, 1-2 on mobile/tablet */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Labs grid: 2-3 columns responsive */
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.lab-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.lab-link {
+  display: inline-block;
+  margin-top: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  background: rgba(56,189,248,0.08);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(56,189,248,0.08);
+}
+.lab-link:hover {
+  background: rgba(56,189,248,0.18);
+  color: var(--accent-purple);
+  box-shadow: 0 4px 16px rgba(56,189,248,0.13);
+}
+
+/* Section spacing */
+.features-section, .labs-preview, .cta-section {
+  margin-bottom: var(--space-40);
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .hero-maxwidth, .features-maxwidth, .labs-maxwidth {
+    max-width: 98vw;
+    padding: 0 var(--space-8);
+  }
+  .features-grid, .labs-grid {
+    gap: var(--space-12);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-title, .labs-title {
+    font-size: 1.3rem;
+    margin-bottom: var(--space-12);
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .labs-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .hero-maxwidth, .features-maxwidth, .labs-maxwidth {
+    padding: 0 var(--space-2);
+  }
+}
+/* === PROFESSIONAL DARK ACADEMIC THEME === */
+
+/* All color, spacing, and typography now use theme.css variables */
+
+/* ======================
+   GLOBAL LAYOUT
+   ====================== */
+
+.home-container {
+  font-family: var(--font-main);
+  background: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  padding-top: var(--space-32);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Subtle background glow (reduced intensity) */
+.home-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 15%, var(--color-primary) 4%, transparent 40%),
+    radial-gradient(circle at 85% 85%, var(--color-accent) 4%, transparent 45%);
+  opacity: 0.08;
+}
+
+/* ======================
+   HERO SECTION
+   ====================== */
+
+.hero-box {
+  max-width: 760px;
+  margin: var(--space-40) auto var(--space-32);
+  padding: var(--space-40) var(--space-24);
+  background: linear-gradient(180deg, var(--bg-panel-soft), var(--bg-panel));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-elevated);
+}
+
+.hero-badge {
+  background: rgba(56,189,248,0.12);
+  color: var(--text-main);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid var(--color-primary);
+  margin-bottom: var(--space-12);
+}
+
+.gradient-text {
+  font-size: var(--font-size-h1);
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: var(--space-24) auto;
+  line-height: 1.65;
+}
+
+/* ======================
+   BUTTONS
+   ====================== */
+
+.btn {
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-body);
+  padding: 0.85rem 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  color: var(--bg-main);
+  box-shadow: var(--shadow-card);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 36px rgba(56,189,248,0.18);
+}
+
+.btn.secondary {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+}
+
+.btn.secondary:hover {
+  background: var(--bg-panel-soft);
+}
+
+/* ======================
+   LAB CARDS
+   ====================== */
+
+.lab-card {
+  background: linear-gradient(180deg, var(--bg-panel-soft), var(--bg-panel));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-24);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: var(--shadow-card);
+}
+
+.lab-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 48px rgba(56,189,248,0.13);
+}
+
+.lab-icon {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+.lab-description {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Feature tags feel like system badges now */
+.lab-feature-tag {
+  background: rgba(56,189,248,0.12);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* ======================
+   FEATURES SECTION
+   ====================== */
+
+.feature-card {
+  background: linear-gradient(180deg, var(--bg-panel-soft), var(--bg-panel));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-card);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 42px rgba(56,189,248,0.13);
+}
+
+.feature-icon {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+}
+
+/* ======================
+   CTA SECTION
+   ====================== */
+
+.cta-section {
+  padding: var(--space-56) var(--space-16);
+  background: linear-gradient(to bottom, transparent, var(--color-primary) 5%, transparent 100%);
+}
+
+.cta-button {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  color: var(--bg-main);
+  border-radius: var(--radius-md);
+  padding: 0.95rem 2.2rem;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 34px rgba(56,189,248,0.18);
+}
+
+/* ======================
+   RESPONSIVE
+   ====================== */
+
+@media (max-width: 768px) {
+  .gradient-text { font-size: 2.1rem; }
+  .hero-description { font-size: 1rem; }
+}

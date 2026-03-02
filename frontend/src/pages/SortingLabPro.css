@@ -1,0 +1,62 @@
+/* SortingLab.css - polished academic styling for the experiment */
+
+:root{
+  --card-bg: #fff;
+  --accent: #1e40af;
+  --muted: #64748b;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --glass: #f8fafc;
+}
+
+body { margin:0; font-family: "Segoe UI", Roboto, Arial, sans-serif; background:#f3f6fb; color:#0f172a; }
+.lab-page { max-width:1100px; margin:28px auto; padding:12px; }
+.lab-title { text-align:center; color:var(--accent); margin-bottom:18px; }
+
+.card { background:var(--card-bg); border-radius:10px; padding:18px 20px; margin-bottom:18px; box-shadow:0 8px 24px rgba(15,23,42,0.06); border:1px solid #e6eefc; }
+.card h2{ color:var(--accent); margin-top:0; }
+
+/* controls */
+.row { display:flex; gap:16px; align-items:center; }
+.controls-row { justify-content:space-between; flex-wrap:wrap; margin-bottom:12px; }
+.field label{ display:block; font-weight:600; margin-bottom:6px; }
+.field input { padding:10px; border-radius:8px; border:1px solid #cbd5e1; min-width:260px; }
+
+/* presets */
+.preset-buttons { display:flex; gap:8px; align-items:center; }
+.btn { padding:8px 12px; border-radius:8px; border:none; font-weight:600; cursor:pointer; background:#f1f5f9; color:#0f172a; box-shadow:0 2px 6px rgba(2,6,23,0.04); }
+.btn.small{ padding:6px 10px; font-size:14px; }
+.btn.outline { background:transparent; border:1px solid #cbd5e1; }
+
+/* main action area */
+.actions-row { justify-content:space-between; margin-bottom:12px; flex-wrap:wrap; }
+.action-buttons { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.btn.primary{ background:var(--accent); color:white; }
+.btn.danger{ background:var(--danger); color:white; }
+.btn:hover{ transform:translateY(-1px); transition:transform .12s ease; }
+
+/* counters */
+.counters { display:flex; gap:18px; align-items:center; color:#d1d5db; font-weight:600; }
+
+/* step info */
+.step-info-box { margin:10px 0 14px; background:#eef2ff; padding:8px 10px; border-radius:8px; color:#1e3a8a; }
+.step-info-label{ font-weight:700; color:var(--accent); margin-bottom:6px; }
+
+/* workspace */
+.big-workspace { display:flex; justify-content:center; gap:12px; padding:20px; border-radius:12px; background:linear-gradient(180deg,#ffffff,#fbfdff); border:1px solid #e6eefc; min-height:110px; align-items:flex-end; }
+
+/* bars */
+.bar { width:56px; background:#e6eefc; border-radius:8px; display:flex; align-items:flex-end; justify-content:center; position:relative; transition:transform .28s ease, box-shadow .2s ease, background .18s ease; }
+.bar .bar-value { padding:6px 4px; font-weight:700; color:#1e3a8a; }
+.bar.compare { box-shadow: 0 6px 18px rgba(30,58,138,0.12); transform: translateY(-6px); border:1px solid rgba(30,58,138,0.06); }
+.bar.swap { background: #fef3f2; box-shadow: 0 8px 22px rgba(220,38,38,0.12); transform: scale(1.08); }
+
+/* speed row */
+.speed-row { margin-top:14px; display:flex; gap:12px; align-items:center; }
+
+/* responsive */
+@media (max-width: 820px) {
+  .big-workspace { gap:8px; padding:14px; }
+  .bar { width:44px; }
+  .field input { min-width:140px; }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Using Array</title>
+</head>
+<body>
+  <main class="stack-main">
+    <h1 class="stack-heading">Stack Using Array</h1>
+    <form class="stack-form" autocomplete="off">
+      <label for="stack-input" class="stack-label">Enter Value:</label>
+      <input id="stack-input" class="stack-input" type="text" name="value" placeholder="Value" />
+      <button type="button" class="stack-btn push-btn">PUSH</button>
+      <button type="button" class="stack-btn pop-btn">POP</button>
+      <button type="button" class="stack-btn reset-btn">RESET</button>
+    </form>
+    <div class="stack-speed-panel">
+      <label for="stack-speed-slider" class="stack-label">Animation Speed:</label>
+      <input id="stack-speed-slider" type="range" min="100" max="1000" value="400" step="50" />
+      <span id="stack-speed-value">400ms</span>
+    </div>
+    </form>
+    <div class="stack-edu-panel">
+      <div class="stack-info">
+        <span id="stack-size-info">Stack Size: 0</span>
+        <span id="stack-top-info">Top Index: -1</span>
+      </div>
+      <section class="stack-container" aria-label="Stack Visualization">
+        <!-- Stack blocks will appear here -->
+      </section>
+      <div class="stack-log-panel">
+        <div class="stack-log-title">Operation Log</div>
+        <ul id="stack-log-list" class="stack-log-list"></ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
